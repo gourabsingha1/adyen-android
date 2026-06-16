@@ -37,7 +37,7 @@ internal fun StoredCardComponent(
                 modifier = Modifier.fillMaxWidth(),
                 verticalArrangement = Arrangement.spacedBy(Dimensions.Spacing.ExtraLarge),
             ) {
-                StoredCardSecurityCodeField(
+                SecurityCodeField(
                     securityCodeState = viewState.securityCode,
                     cardNumberFormat = viewState.cardNumberFormat,
                     onValueChange = { onIntent(StoredCardIntent.UpdateSecurityCode(it)) },
